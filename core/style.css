@@ -1,0 +1,575 @@
+body{
+    width: 100%;
+    height: 100%;
+    color: #000;
+    font-family: "Segoe UI", sans-serif;
+
+    font-style: normal;
+    font-variant-ligatures: normal;
+    font-variant-caps: normal;
+    font-variant-numeric: normal;
+    font-variant-east-asian: normal;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 150%;
+    background-image: url(./images/background.jpg);
+}
+
+input{
+    background: none;
+    border: 1px solid grey;
+    border-radius: 17px;
+    outline: none;
+}
+
+table{
+    margin-top: 10px;
+    border-spacing: 30px 0px;
+    max-width: 40%;
+}
+
+.t3_1{
+    margin-left: 30px;
+    border-spacing: 0px 0px;
+}
+
+.t3_1 .td_1{
+    padding: 5px 15px;
+    color: white;
+    background-color: #00BFFF;
+}
+
+.tr_{
+    background-color: #D3D3D3;
+}
+
+.tr__{
+    background-color: #F5F5F5;
+}
+
+b{
+    font-weight: 700;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+*,
+*:before,
+*:after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+/* ВЕРХНЯЯ СЕТКА */
+header{
+    width: 100%;
+    height: 80px;
+}
+
+.conteiner{
+    width: 100%;
+    z-index: 10;
+    position: fixed;
+    height: 80px;
+    background-color: #4F4F4F;
+    padding: 0 20px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* ССЫЛКИ */
+
+nav{
+    font-size: 1.4em;
+    text-transform: uppercase;
+    display: flex;
+    font-weight: bold;
+}
+
+.header_logo_link{
+    margin: 0 30px;
+    font-size: 2em;
+    font-weight: 800;
+    transition: all .5s linear;
+    color: #C6C9E1;
+}
+
+.header_logo_link:hover{
+    color: yellow;
+    transition: all .5s linear;
+}
+
+.nav_menu{
+    padding: 10px 0;
+    top: 80px;
+}
+
+ul{
+    margin: 0 10px;
+    padding: 10px;
+    list-style: none;
+}
+
+.sub_menu > li{
+    display: inline-block;
+    margin-right: 20px;
+    position: relative;
+}
+
+.sub_menu > li:last-child{
+    margin-top: 0;
+}
+
+.nav_menu .ul_bot{
+    display: none;
+    background: azure;
+    border-radius: 40px;
+    border: 4px solid silver;
+}
+
+li:hover .ul_bot{
+    display: block;
+}
+
+.ul_bot{
+    width: 400px;
+    height: auto;
+    margin: 3px 0;
+    padding: 10px 20px;
+    text-align: left;
+    position: absolute;
+    left: -105px;
+    transition: .5s ease-in-out;
+    font-size: .8em;
+    text-transform: none;
+}
+
+.ul_bot > li{
+    margin: 0 20px;
+    position: relative;
+}
+
+.ul_bot > li:last-child{
+    margin-top: 0;
+}
+
+.li_title{
+    text-align: center;
+    font-size: .7em;
+    padding: 0;
+    margin: 0;
+}
+
+.nav_menu .ul_bottom{
+    display: none;
+    background: gainsboro;
+    border-radius: 20px;
+    border: 3px solid white;
+}
+
+.ul_bottom a{
+    cursor: default;
+    color: grey;
+    transition: all .3s linear;
+}
+
+.ul_bottom a:hover{
+    color: black;
+    transition: all .3s linear;
+}
+
+li li:hover .ul_bottom{
+    display: block;
+}
+
+.ul_bottom{
+    width: 300px;
+    height: auto;
+    margin: 3px 0;
+    text-align: center;
+    padding: 5px 20px;
+    position: absolute;
+    top: -25px;
+    left: -300px;
+    transition: .5s ease-in-out;
+}
+
+.ul_bottom .c_link, .c_link{
+    color: green;
+    cursor: default;
+    transition: all .3s linear;
+}
+
+.ul_bottom .py_link, .py_link{
+    color: #0000FF;
+    cursor: default;
+    transition: all .3s linear;
+}
+
+.ul_bottom .p_link, .p_link{
+    color: #8A2BE2;
+    cursor: default;
+    transition: all .3s linear;
+}
+
+.c_link:hover, .py_link:hover, .p_link:hover{
+    color: black;
+    transition: all .3s linear;
+}
+
+.nav_link{
+    height: auto;
+    color: white;
+    margin: 0 50px;
+    text-decoration: none;
+    transition: all .3s linear;
+    font-size: 1em;
+    text-transform: capitalize;
+}
+
+.nav_link:hover {
+    display: inline-block;
+    opacity: 1;
+    color: #f00;
+    transition: all .3s linear;
+}
+
+.nav_link_auth{
+    margin: 10px 10px;
+    text-decoration: none;
+    transition: all .3s linear;
+    text-transform: capitalize;
+    font-weight: 700;
+    color: #A1A1A1;
+}
+
+.nav_link_auth:hover{
+    color: white;
+    transition: all .3s linear;
+}
+
+.cont_main{
+    width: 100%;
+    height: 100%;
+}
+
+/* ОСНОВНОЙ БЛОК */
+main{
+    width: 100%;
+    height: auto;
+}
+
+#main_open{
+    width: 100%;
+    height: auto;
+    margin: 20px auto;
+    padding: 0 15px;
+    text-align: center;
+}
+
+/* НИЖНЯЯ СЕТКА */
+
+footer{
+    width: 100%;
+    height: 80px;
+    background-color: #000;
+    opacity: 0.9;
+    text-align: center;
+}
+
+#footer{
+    width: 100%;
+    height: 80px;
+    padding: 0 10px;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav_link_footer{
+    font-size: 0.7em;
+    text-transform: capitalize;
+    text-decoration: none;
+    margin: 10px;
+    color: lime;
+    transition: all .4s linear;
+}
+
+.nav_link_footer:hover{
+    color: green;
+    opacity: 1;
+    transition: all .4s linear;
+}
+
+/* АВТОРИЗАЦИЯ */
+
+.block_auth{
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+    padding-bottom: 205px;
+}
+
+.main_auth{
+    width: 100%;
+    height: auto;
+    padding: 140px 400px 170px;
+    display: block;
+    text-align: center;
+}
+
+.form_auth{
+    margin-top: 50px;
+    width: auto;
+    height: auto;
+}
+
+.br_auth{
+    margin-top: 10px;
+    width: 350px;
+    height: 40px;
+    padding: 6px 10px;
+    font-size: 16px;
+}
+
+.but_{
+    margin: 7px 5px;
+    border-radius: 25px;
+}
+
+#auth_, #reg_, #reg__{
+    width: 130px;
+    height: 45px;
+    color: white;
+    transition: all .3s linear;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#auth_{
+    background-color: green;
+}
+
+#reg__{
+    width: 220px;
+    background-color: blue;
+}
+
+#reg_{
+    width: 170px;
+    background-color: blue;
+}
+
+#reg_:hover, #reg__:hover{
+    background-color: #5761E5;
+    cursor: pointer;
+    transition: all .3s linear;
+}
+
+#auth_:hover{
+    background-color: #34C924;
+    cursor: pointer;
+    transition: all .3s linear;
+}
+
+.a_reg{
+    color: white;
+}
+
+.res_pass{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.res_pass:hover{
+    color: red;
+}
+
+.main_head{
+    width: 100%;
+    min-height: 770px;
+    margin: 10px 0;
+    padding: 0 20px;
+}
+
+.div_head{
+    width: 100%;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 10px 0 15px;
+    padding: 0 20px;
+}
+
+.div_head#head_2{
+    margin-top: 40px;
+}
+
+.div_main{
+    width: 100%;
+    font-size: 18px;
+}
+
+.div_main#main_2{
+    margin-top: 20px;
+}
+
+.div_logo{
+    width: auto;
+    height: auto;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 43px;
+}
+
+.div_logo#php_logo{
+    margin-top: 10px;
+    margin-left: 40px;
+    font-weight: bolder;
+}
+
+.div_fix_main{
+    width: auto;
+    max-width: 40%;
+    margin-top: 10px;
+    margin-left: 30px;
+    padding: 10px 10px 5px 40px;
+    background-color: #FFBB3D;
+    border-left: 5px solid orangered;
+    font-style: italic;
+}
+
+.div_code{
+    width: auto;
+    max-width: 40%;
+    margin-top: 10px;
+    margin-left: 30px;
+    padding: 10px 10px 5px 40px;
+    background-color: Gainsboro;
+    border-left: 5px solid green;
+    font-style: italic;
+}
+
+.main_head_php{
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+    padding: 0 30px;
+}
+
+.links_php{
+    width: 50%;
+    height: auto;
+}
+
+
+.div_b1{
+    font-size: 28px;
+    font-weight: bold;
+    padding: 20px 60px;
+}
+
+.ul_links_top_php, .ul_links_top_php_2{
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.ul_links_top_php_2{
+    padding-top: 0px;
+}
+
+.ul_links_bot_php{
+    font-size: 16px;
+    font-weight: 600;
+    padding-top: 5px;
+    padding-left: 20px;
+}
+
+.links_php li{
+    color: #8A2BE2;
+}
+
+.links_php a{
+    color: grey;
+}
+
+.links_php a:hover{
+    color: red;
+}
+
+.div_chat{
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+    padding: 0 20px;
+}
+
+.main_chat{
+    width: 550px;
+    height: 530px;
+    text-align: left;
+    padding: 5px 20px;
+    border: 1px solid grey;
+    border-radius: 50px;
+    left: 34%;
+    position: relative;
+    overflow: auto;
+}
+
+.add_chat{
+    width: 550px;
+    padding: 10px;
+    color: black;
+    left: 34%;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+#new_mess{
+    width: 530px;
+    height: 38px;
+    margin-right: 5px;
+    padding: 0 10px;
+    font-size: 16px;
+}
+
+#but_mess{
+    width: 150px;
+    height: 37px;
+    color: white;
+    background-color: green;
+    transition: all .3s linear;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.chat_name{
+    font-weight: 600;
+    padding-left: 20px
+}
+
+.chat_text{
+    font-weight: 400;
+}
+
+.chat_date, .chat_my_date{
+    font-weight: 400;
+    font-size: 11px;
+}
+
+.chat_my_date{
+    text-align: right;
+}
+
+.chat_my_text{
+    font-weight: 400;
+    text-align: right;
+}
