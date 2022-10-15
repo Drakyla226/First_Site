@@ -3,8 +3,8 @@
 <footer>
     <div id="footer">
         <nav>
-            <a class="nav_link_footer" href="http:\\vk.com\drakyla226" target="_blank" title="Олег Солодов">Drakyla226</a>
-            <a class="nav_link_footer" href="https:\\vk.com\im?sel=308563695" target="_blank" title="Сообщение разработчику">Написать</a>
+            <a class="nav_link_footer" href="https:\\vk.com\im?sel=308563695" target="_blank" title="Личные сообщения"><img src= "<?php echo $images; ?>vk.png" width="44" height="44" alt="SoloLearn"></a>
+            <a class="nav_link_footer" href="https://e.mail.ru/compose/?to=drakyla_226@mail.ru" target="_blank" title="Обратная связь"><img src= "<?php echo $images; ?>mail.png" width="44" height="44" alt="SoloLearn"></a>
         </nav>
     </div>
 </footer>
