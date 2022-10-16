@@ -3,8 +3,10 @@
 
 <main>
     <div id="main_open">
-        <a href="/php/"><img src= "<?php echo $images; ?>php.png" width="200" height="150" alt="SoloLearn"></a>
-</div>
+      <a class="padding_" href="/c/"><img src= "<?php echo $images; ?>c.png" width="125" height="120" alt="c#"></a>
+      <a class="padding_" href="/python/"><img src= "<?php echo $images; ?>python.png" width="150" height="120" alt="PYTHON"></a>
+      <a class="padding_" href="/php/"><img src= "<?php echo $images; ?>php.png" width="170" height="120" alt="PHP"></a>
+    </div>
 </main>
 
 <?php require($_SERVER[DOCUMENT_ROOT]."/core/footer.php");?>

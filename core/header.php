@@ -19,10 +19,10 @@
 
         <nav class="nav_menu">
             <ul class="sub_menu">
-                <!--<li><a class="nav_link">c#</a>
+                <li><a class="nav_link">c#</a>
                   <ul class="ul_bot">
 
-                    !-- C# --
+                    <!-- C# -->
                     <li><a class="c_link" href="#">Базовые концепции языка</a>
                       <ul class="ul_bottom">
                         <li class="li_title"><a class="c_link" href="#">Базовые концепции</a></li>
@@ -45,7 +45,7 @@
                 <li><a class="nav_link">python</a>
                   <ul class="ul_bot">
 
-                    !-- PYTHON --
+                    <!-- PYTHON -->
                     <li><a class="py_link" href="#">Пусто</a>
                       <ul class="ul_bottom">
                         <li class="li_title"><a class="py_link" href="#">Пусто</a></li>
@@ -63,7 +63,7 @@
                     </li>
 
                   </ul>
-                </li>-->
+                </li>
 
                 <li><a class="nav_link">php</a>
                     <ul class="ul_bot">
