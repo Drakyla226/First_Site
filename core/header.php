@@ -1,3 +1,4 @@
+<?php require($_SERVER[DOCUMENT_ROOT]."/core/core.php");?>
 <?php session_start();?>
 <!DOCTYPE html>
 <html lang="ru" dir="ltr">
